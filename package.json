@@ -4,7 +4,10 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
   },
   "repository": "https://github.com/DeanYQ/linux-optimus.git",
   "keywords": [
@@ -14,6 +17,8 @@
   "author": "DeanYQ",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.1.1"
+    "electron": "^4.1.1",
+    "tslint": "^5.10.0",
+    "typescript": "^3.1.0"
   }
 }
