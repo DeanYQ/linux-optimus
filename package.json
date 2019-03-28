@@ -1,0 +1,19 @@
+{
+  "name": "linux-optimus",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/DeanYQ/linux-optimus.git",
+  "keywords": [
+    "Electron",
+    "linux"
+  ],
+  "author": "DeanYQ",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.1.1"
+  }
+}
